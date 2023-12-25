@@ -1,0 +1,53 @@
+/* App.css */
+
+body {
+  background-color: #ddd;
+}
+.image-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  transition: transform 0.3s ease-in-out; /* Add transition for sliding effect */
+}
+
+.heading {
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: Outfit;
+}
+
+.image-container {
+  flex: 0 1 calc(25% - 16px); 
+  margin: 8px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: grab;
+  box-sizing: border-box;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.resetButton {
+  font-weight: 600;
+  margin-top: 20px;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: white;
+  border: 2px solid green;
+  transition: all 0.3s;
+  font-family: Outfit;
+}
+
+.resetButton:hover {
+  background-color: green;
+  color: white;
+}
